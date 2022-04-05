@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo CDN</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul v-for="persona in personas" :key="persona.id">
+            <li>{{persona.nombre}}</li>
+            <li>{{persona.apellido}}</li>
+            <li>{{persona.rut}}</li>
+            <li>{{persona.fecha}}</li>
+            <li>{{persona.edad}}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                personas: [
+                    {nombre: "pepito", apellido:"perez", rut:"12345678-2", fecha:"01-01-2001", edad: "21"},
+                    {nombre: "pepito2", apellido:"perez2", rut:"11111111-2", fecha:"01-01-2000", edad: "22"},
+                    {nombre: "pepito3", apellido:"perez3", rut:"22222222-2", fecha:"01-01-2002", edad: "20"}
+                ]
+            }
+        })
+    </script>
+</body>
+
+</html>
