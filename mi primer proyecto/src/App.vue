@@ -7,13 +7,17 @@
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Rut</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Fecha de Nacimiento</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="(item, index) in personas" :key="index">
             <th scope="row">{{index}}</th>
             <td>{{item.nombre}}</td>
+            <td>Otto</td>
+            <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
           </tr>         
