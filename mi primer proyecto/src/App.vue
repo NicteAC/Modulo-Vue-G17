@@ -14,13 +14,13 @@
         </thead>
         <tbody>
           <tr v-for="(item, index) in personas" :key="index">
-            <th scope="row">{{index}}</th>
-            <td>{{item.nombre}}</td>
+            <th scope="row">{{ index }}</th>
+            <td>{{ item.nombre }}</td>
             <td>Otto</td>
             <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
-          </tr>         
+          </tr>
         </tbody>
       </table>
     </div>
@@ -30,8 +30,8 @@
 <script>
 export default {
   name: "App",
-  data () {
-    return  {
+  data() {
+    return {
       personas: [
         {
           nombre: "pepito",
@@ -55,7 +55,7 @@ export default {
           edad: "20",
         },
       ],
-    }
+    };
   },
 };
 </script>
